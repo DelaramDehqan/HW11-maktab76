@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="btn bg-red-100 flex justify-center items-center">
+        <button onclick="deleteRows()" class="bton text-primary border-red-300 md:border-2 hover:bg-red-400 hover:scale-105 py-2 px-8">Remove</button>
+        <button onclick="addRows()" class="bton text-primary border-red-300 md:border-2 hover:bg-red-400 hover:scale-105 py-2 px-8">Add</button>
+
+    </div>
+    <div class="bg-red-100 flex justify-center items-center h-screen">
+    <table class="shadow-2xl font-[Poppins] border-2 border-gray-400 w-6/12 overflow-hidden" id="myTable">
+        <thead class="text-black">
+            <tr class="border-gray-300 border-2">
+                <th class="py-3 bg-zinc-100">Class</th>
+                <th class="py-3 bg-zinc-100">Heading</th>
+                <th class="py-3 bg-zinc-100">Heading</th>
+            </tr>
+            <tbody class="text-cyan-900 text-center">
+                <tr class="bg-zinc-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Default</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-blue-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">primary</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-pink-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Secondary</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-teal-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Success</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-fuchsia-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Danger</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-yellow-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Warning</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-sky-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Info</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-slate-100 hover:bg-red-400 hover:scale-105 cursor-pointer duration-300">
+                    <td class="py-3 px-6">Light</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+                <tr class="bg-slate-800 hover:bg-red-400 hover:scale-105 text-white cursor-pointer duration-300">
+                    <td class="py-3 px-6">Dark</td>
+                    <td class="py-3 px-6">Cell</td>
+                    <td class="py-3 px-6">Cell</td>
+                </tr>
+
+            </tbody>
+
+        </thead>
+
+    </table>
+    </div>
+    <script src="basic.js"></script>
+</body>
+</html>
